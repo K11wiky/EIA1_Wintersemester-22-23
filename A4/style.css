@@ -1,11 +1,39 @@
 /* here is the General setting for all the site*/
+
 html{
-  background-color:white;
-  
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family:Arial, Helvetica, sans-serif
+}
+/* Style for the body*/
+body {
+  text-align: left;
+  margin: 0px;
+}
+header{
+  display: flex;
+flex-direction: row;
+justify-content:space-between;
+height: 400px;
+background-image: url(images/Image.jpeg);
+}
+/*Logot style header*/
+#logobox{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
 }
 
+#logo{
+  height: 30px;
+  width:auto;
+}
 
-
+.navigation{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /*Webseite style*/
 
