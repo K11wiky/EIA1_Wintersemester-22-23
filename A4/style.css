@@ -1,0 +1,57 @@
+/* here is the General setting for all the site*/
+html{
+  background-color:white;
+  
+}
+
+
+
+
+/*Webseite style*/
+
+.bgimg{
+    background-image: url(images/cityone.jpg);
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.w-header,.web-line{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    position: absolute;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+
+}
+
+.web-line{
+  position: relative;
+  width:40%}
+
+.w-logo{
+  position: left;
+  top:0;
+  left:-10px;
+  width: 80px;
+  height:60px;
+}
+
+.maintains{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
