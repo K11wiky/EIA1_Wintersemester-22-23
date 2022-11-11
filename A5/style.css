@@ -1,0 +1,219 @@
+/* here is the General setting for all the site*/
+
+html{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family:Arial, Helvetica, sans-serif
+}
+/*the banneeeeerrr*/
+.banner{
+  position: absolute;
+  top:0px;
+  left:0px;
+  background-color: rgb(39, 38, 38);
+  background-size: 10px;
+  font-size: 8px;
+  font-family: Orbitron;
+  
+}
+/* Style for the body*/
+body {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  margin: 0px;
+  
+}
+.header2{
+  color: rgb(192, 0, 48);
+  text-align: center;
+  font-family: Orbitron;
+}
+header{
+  display: flex;
+flex-direction: row;
+justify-content:space-between;
+height: 400px;
+background-image: url(images/Image.jpeg);
+animation-name: slideshow;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+@keyframes slideshow{
+  20% {background-image: url(images/Image.jpeg)}
+  50% {background-image: url(images/car_orel.jpg)}
+  100%{background-image: url(images/alva.png)}
+}
+  
+
+/* Lets do the transition and resize of the Imagess*/
+.transition {
+  margin: 0 20px;
+  opacity: 0.5;
+  transform: scale(1);
+  /* transition: all 0.5s ease-in-out 0s; */
+}
+
+.transition:hover{
+  transform: scale(1.2);
+    opacity: 1;
+  }
+
+/*Logot style header*/
+#logobox{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+#logo{
+  height: 200px;
+  width:auto;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*style the buttoonssss*/
+.button{
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  margin: 20px;
+}
+
+.button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.button:active{
+  color: white;
+  text-decoration: underline;
+}
+
+/* button of the ative site*/
+.button2{
+  color:white;
+  text-decoration: underline;
+  margin: 20px;
+}
+/* Lesss go, the freaking content */
+.content{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* da Footeroooo*/
+footer{
+  background-color:rgb(223, 223, 223);
+  color: rgb(19, 18, 18);
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  
+}
+
+.footernote{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icon{
+  width:20px;
+  height: auto;
+  opacity: 0.5;
+  transform: scale(1);
+}
+.icon:hover{
+  transform: scale(1.5);
+  opacity: 1;
+}
+/*here we style the input*/
+.input1{ 
+  background-color: #a30031;
+  margin: 2px;
+  width: 50%;
+  height: 18px;
+  border-color: #949494;
+  color: #ffffff;
+
+}
+
+.input1::placeholder{
+  color: white;
+}
+.input2{
+  background-color: #a30031;
+  margin: 2px;
+  width: 50%;
+  height: 250px;
+  border-color: #a30031;
+  color: #ffffff;
+
+}
+.input2::placeholder{
+  color: white;}
+
+
+#send-button{
+  background-color: #a30031;
+  color: #ffffff;
+  text-decoration: none;
+ 
+}
+
+
+
+/*Webseite style*/
+
+.bgimg{
+    background-image: url(images/cityone.jpg);
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.w-header,.web-line{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    position: absolute;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+
+}
+
+.web-line{
+  position: relative;
+  width:40%}
+
+.w-logo{
+  position: left;
+  top:0;
+  left:-10px;
+  width: 80px;
+  height:60px;
+}
+
+.maintains{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
