@@ -11,6 +11,7 @@ html{
 /*the banneeeeerrr it didnt work i have to try again*/
 p.banner{
 background-color:#52111a;
+text-align: center;
 font-family: Orbitron;
 color: #b1b1b1;
 width: 100%;
@@ -18,7 +19,6 @@ width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-text-transform: capitalize;
 position:absolute;
 top: 50px;
 left: 75%;
