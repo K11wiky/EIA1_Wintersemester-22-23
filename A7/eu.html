@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carbon Dioxide Emissions</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="./myscrip.js"></script>
+    <script src="myscrip.js" defer></script>
 </head>
 
 <body>
@@ -127,13 +127,20 @@
             </div>
         </div>
     </nav>
-
-    <img src="images/eu_stars.png" class="stars">
-    <h1>
-        Einwohnerzahl in der europäischen Union
-    </h1>
-
     <main>
+        <div class="chartStarWrapper">
+            <img src="images/eu_stars.png" class="stars">
+            
+            <div class="chartWrapper">
+                <div class="chart"></div>
+            </div>
+
+        </div>
+        
+        <h1 id="titel">
+            Einwohnerzahl in der europäischen Union
+        </h1>
+        
         <section>
             <h2>65,48Mio</h2>
             <p>Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
