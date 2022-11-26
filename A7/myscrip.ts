@@ -1,80 +1,44 @@
 namespace A7 {
-    const germany: string = "Deutschland";
-    const italy : string= "Italien";
-    const france : string= "Frankreich";
-    const ireland : string = "Irland";
+    const germany= "Deutschland";
+    const italy = "Italien";
+    const france = "Frankreich";
+    const ireland  = "Irland";
+
 // Einwohnerzahl der Ländder 
-const population2022DE : number = 83803014;
+const population2022DE = 83803014;
+const population2008DE = 81171214;
+const population2022IT = 60629462; 
+const population2008IT = 58835465;
+const population2022FR = 66050242;
+const population2008FR = 62040147;
+const population2022IR =  4940395;
+const population2008IR =  4370509;
+const EinwohnerEU: number= 447.7;
 
-const population2008DE : number = 81171214;
-const population2022IT : number = 60629462; 
-
-const population2008IT : number = 58835465;
-const population2022FR : number = 66050242;
-
-const population2008FR : number = 62040147;
-const population2022IR: number  =  4940395;
-
-const population2008IR : number =  4370509;
-let EinwohnerEU: number= 447.7;
-
-//Population ( Einwohnerwacjsztum in %)
+//Population ( Einwohnerwachsztum in %)
 let prozentDE = ((1-population2008DE/population2022DE)*100).toFixed(2);
 let ProzentIT = ((1-population2008IT/population2022IT)*100).toFixed(2);
 let prozentFR = ((1-population2008FR/population2022FR)*100).toFixed(2);
 let prozentIR = ((1-population2008IR/population2022IR)*100).toFixed(2);
 
-// Einwohnerzahl der länder in relation zu EU in %
+// Einwohnerzahl der länder in relation zu EU in % nötig für balken wachstum 
 let EinProzentWer = EinwohnerEU/ 100;
-let DerelativezuEU = ( population2022DE/EinProzentWer).toFixed(2)
-let FRrelativzuEU  = ( population2022FR/ EinProzentWer).toFixed(2)
-let ITrelativezuEU = ( population2022IT/ EinProzentWer).toFixed(2)
-let IRrelativezuEU = ( population2022IR/ EinProzentWer).toFixed(2)
+let PopRelDE = ( population2022DE/EinProzentWer).toFixed(2);
+let PopRelFR  = ( population2022FR/ EinProzentWer).toFixed(2);
+let popRelIT = ( population2022IT/ EinProzentWer).toFixed(2);
+let PopRelIR = ( population2022IR/ EinProzentWer).toFixed(2);
 
+//Einwohnerwachstum in Zahlen
+let WachtsrumsrateDE = population2022DE - population2008DE;
+let WachstumsrateFR = population2022FR - population2008FR;
+let WachstumsrateIT = population2022IT -  population2008IT;
+let WachstumsrateIR = population2022IR -population2008IR;
 
-//console.log("in "+ germany+ "beträgt die aktuelle Einwohnerzahl " + population2022DE);
-
-//console.log("in "+ germany+ "beträgt die aktuelle Einwohnerzahl  " + population2008DE);
-
-//console.log("in "+ italy + "beträgt die aktuelle Einwohnerzahl " + population2022IT);
-
-//console.log("in "+ italy + "beträgt die aktuelle Einwohnerzahl " + population2008IT);
-
-//console.log("in "+ france+ "beträgt die aktuelle Einwohnerzahl " + population2022FR);
-
-//console.log("in "+ france+ "beträgt die aktuelle Einwohnerzahl" + population2008FR);
-
-//console.log("in "+ ireland + "beträgt die aktuelle Einwohnerzahl" + population2022IR);
-
-//console.log("in "+ ireland + "beträgt die aktuelle Einwohnerzahl" + population2008IR);
-
-// Wachstumsrate DE zwischen 2008 uns 2022 in %
-console.log(" Die Einwohnerzahl in " + germany + "ist in den Letzten 2 Jahren um " + prozentDE + " % gestiegen  ");
-
-console.log(" Relative zur Gesamtzahl der Eiwohner in der EU im Jahr 20022 : " + DerelativezuEU+ " % ");
-
-console.log(" Relative zur Gesamtzahl der Eiwohner in der EU im Jahr 20022 :" + ITrelativezuEU+ " % ");
-
-// Wachstumsrate IT zwischen 2008 und 2022 in % 
-console.log(" Die Einwohnerzahl in " + italy + " ist in den Letzten 2 Jahren um " + ProzentIT + " % gestiegen ");
-
-
-console.log(" Relative zur Gesamtzahl der Eiwohner in der EU im Jahr 20022 : " + FRrelativzuEU+ " % ");
-
-//Wachstumsrate FR zwischen 2008 und 2022 in %
-
-console.log(" Die Einwohnerzahl in " + france + " ist in den Letzten 2 Jahren um " + prozentFR + " % gestiegen ");
-
-console.log(" Relative zur Gesamtzahl der Eiwohner in der EU im Jahr 20022 : " + IRrelativezuEU +" % ");
-
-// Wachstumsrate IR zwischen 2008 und 2022 in %
-
-console.log(" Die Einwohnerzahl in " + ireland + " ist in den Letzten 2 Jahren um " + prozentIR + " % gestiegen ");
 
 
 // Function abschnitt
 
-function consoleoutput(countryname: string, resident: number ){
+function consoleoutput (countryname: string, resident: number ){
     console.log ( " in " + countryname + " beträgt die aktuelle Einwohnerzahl " + resident );
 
 
@@ -87,7 +51,7 @@ consoleoutput(italy,population2022IR);
 consoleoutput(france,population2008FR);
 consoleoutput(france,population2022FR)
 consoleoutput(ireland,population2008IR);
-consoleoutput(ireland,population2022IR)
+consoleoutput(ireland,population2022IR);
 
 
 
