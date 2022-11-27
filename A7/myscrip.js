@@ -26,46 +26,44 @@ var A7;
     let PopProzentFR = ((1 - population2008FR / population2022FR) * 100).toFixed(2);
     let PopProzentIR = ((1 - population2008IR / population2022IR) * 100).toFixed(2);
     //Einwohnerwachstum in Zahlen
-    let WachtsrumsrateDE = population2022DE - population2008DE;
-    let WachstumsrateFR = population2022FR - population2008FR;
-    let WachstumsrateIT = population2022IT - population2008IT;
-    let WachstumsrateIR = population2022IR - population2008IR;
+    let WachtstumsrateDE = (population2022DE - population2008DE).toFixed(3);
+    let WachstumsrateFR = (population2022FR - population2008FR).toFixed(3);
+    let WachstumsrateIT = (population2022IT - population2008IT).toFixed(3);
+    let WachstumsrateIR = (population2022IR - population2008IR).toFixed(3);
     let WachstumsrateEU = population2022EU - population2022EU;
-    // Function abschnitt
-    function content(Countryname, Population, PopRel, PopProzent, Wachstumsrate) {
-        document.querySelector('h1').innerHTML = " Einwohnerzahl in " + Countryname;
-        document.querySelector('#section_1_h2').innerHTML = Population.toString() + "Mio";
-        document.querySelector('#section_1_p').innerHTML = "Gesamtzahl Einwohnerinnern und Einwohner in " + Countryname + " in 2022 ";
-        document.querySelector('#section_2_h2').innerHTML = PopRel + " % ";
-        document.querySelector('#section_3_h2').innerHTML = PopProzent + " % ";
-        document.querySelector('#section_4_h2').innerHTML = Wachstumsrate.toFixed(3) + "Mio";
-        document.querySelector('.chart').setAttribute('style', 'height:' + PopRel.toFixed(2) + "+");
-    }
-    //function consoleoutput (countryname: string, resident: number ){
-    //console.log ( " in " + countryname + " beträgt die aktuelle Einwohnerzahl " + resident );
-    //consoleoutput(germany,population2008DE);
-    //consoleoutput(germany, population2022DE);
-    //consoleoutput(italy,population2008IT);
-    //consoleoutput(italy,population2022IR);
-    //consoleoutput(france,population2008FR);
-    //consoleoutput(france,population2022FR)
-    //consoleoutput(ireland,population2008IR);
-    ///consoleoutput(ireland,population2022IR);
-    //};
-    // html manupilation der Länder ausgabe und chart
+    // Einwohner Zahl in %
+    console.log(" Die Einwohnerzahl in " + germany + " ist in den Letzten 2 Jahren um " + PopProzentDE + " % gestiegen ");
+    console.log(" Die Einwohnerzahl in " + france + " ist in den Letzten 2 Jahren um " + PopProzentFR + " % gestiegen ");
+    console.log(" Die Einwohnerzahl in " + italy + " ist in den Letzten 2 Jahren um " + PopProzentIT + " % gestiegen ");
+    console.log(" Die Einwohnerzahl in " + ireland + " ist in den Letzten 2 Jahren um " + PopProzentIR + " % gestiegen ");
+    // Relation Gesamt Einwohner in EU %
+    console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + PopRelDE + " % ");
+    console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + PopRelFR + " % ");
+    console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + popRelIT + " % ");
+    console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + PopRelIR + " % ");
+    //Wachstumsrate in Zahl 
+    console.log(" Wachstumrate seit 2008: " + WachtstumsrateDE + " Mio ");
+    console.log(" Wachstumrate seit 2008: " + WachstumsrateFR + " Mio ");
+    console.log(" Wachstumrate seit 2008: " + WachstumsrateIT + " Mio ");
+    console.log(" Wachstumrate seit 2008: " + WachstumsrateIR + " Mio ");
+    // html manupilation der Länder ausgabe
     let DOM;
     (function (DOM) {
         document.querySelector('.germany').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Deutschland";
+            document.querySelector('.chart').setAttribute("style", "height:" + PopRelDE + "%");
         });
         document.querySelector('.italy').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Italien";
+            document.querySelector('.chart').setAttribute("style", "height:" + popRelIT + "%");
         });
         document.querySelector('.france').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Frankreich";
+            document.querySelector('.chart').setAttribute("style", "height:" + PopRelFR + "%");
         });
         document.querySelector('.ireland').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Irland";
+            document.querySelector('.chart').setAttribute("style", "height:" + PopRelIR + "%");
         });
     })(DOM || (DOM = {}));
 })(A7 || (A7 = {}));
