@@ -26,7 +26,7 @@ var A7;
     let PopProzentFR = ((1 - population2008FR / population2022FR) * 100).toFixed(2);
     let PopProzentIR = ((1 - population2008IR / population2022IR) * 100).toFixed(2);
     //Einwohnerwachstum in Zahlen
-    let WachtstumsrateDE = population2022DE - population2008DE;
+    let WachstumsrateDE = population2022DE - population2008DE;
     let WachstumsrateFR = population2022FR - population2008FR;
     let WachstumsrateIT = population2022IT - population2008IT;
     let WachstumsrateIR = population2022IR - population2008IR;
@@ -42,7 +42,7 @@ var A7;
     console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + popRelIT + " % ");
     console.log(" Relativ zur Gesamtzahl der Einnwohner in der EU im Jahr 2022 " + PopRelIR + " % ");
     //Wachstumsrate in Zahl 
-    console.log(" Wachstumrate seit 2008: " + WachtstumsrateDE + " Mio ");
+    console.log(" Wachstumrate seit 2008: " + WachstumsrateDE + " Mio ");
     console.log(" Wachstumrate seit 2008: " + WachstumsrateFR + " Mio ");
     console.log(" Wachstumrate seit 2008: " + WachstumsrateIT + " Mio ");
     console.log(" Wachstumrate seit 2008: " + WachstumsrateIR + " Mio ");
@@ -52,18 +52,38 @@ var A7;
         document.querySelector('.germany').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Deutschland";
             document.querySelector('.chart').setAttribute("style", "height:" + PopRelDE + "%");
+            document.querySelector('#section_1_h2').innerHTML = population2022DE.toLocaleString() + 'Mio';
+            document.querySelector('#selection_1_p').innerHTML = '';
+            document.querySelector('#section_2_h2').innerHTML = PopRelDE + '&';
+            document.querySelector('#section_3_h2').innerHTML = PopProzentDE + '%';
+            document.querySelector('section_4_h2').innerHTML = WachstumsrateDE.toLocaleString() + 'Mio';
         });
         document.querySelector('.italy').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Italien";
             document.querySelector('.chart').setAttribute("style", "height:" + popRelIT + "%");
+            document.querySelector('#section_1_h2').innerHTML = population2022IT.toLocaleString() + "Mio";
+            document.querySelector('#selection_1_p').innerHTML = "";
+            document.querySelector('#section_2_h2').innerHTML = popRelIT + "%";
+            document.querySelector('#section_3_h2').innerHTML = PopProzentIT + "%";
+            document.querySelector('section_4_h2').innerHTML = WachstumsrateIT.toLocaleString() + "Mio";
         });
         document.querySelector('.france').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Frankreich";
             document.querySelector('.chart').setAttribute("style", "height:" + PopRelFR + "%");
+            document.querySelector('#section_1_h2').innerHTML = population2022FR.toLocaleString() + 'Mio';
+            document.querySelector('#selection_1_p').innerHTML = '';
+            document.querySelector('#section_2_h2').innerHTML = PopRelFR + '&';
+            document.querySelector('#section_3_h2').innerHTML = PopProzentFR + '%';
+            document.querySelector('section_4_h2').innerHTML = WachstumsrateFR.toLocaleString() + 'Mio';
         });
         document.querySelector('.ireland').addEventListener('click', function () {
             document.querySelector('#titel').innerHTML = "Eiwohnerzahl in Irland";
             document.querySelector('.chart').setAttribute("style", "height:" + PopRelIR + "%");
+            document.querySelector('#section_1_h2').innerHTML = population2022IR.toLocaleString() + 'Mio';
+            document.querySelector('#selection_1_p').innerHTML = '';
+            document.querySelector('#section_2_h2').innerHTML = PopRelIR + '&';
+            document.querySelector('#section_3_h2').innerHTML = PopProzentIR + '%';
+            document.querySelector('section_4_h2').innerHTML = WachstumsrateIR.toLocaleString() + 'Mio';
         });
     })(DOM || (DOM = {}));
 })(A7 || (A7 = {}));
