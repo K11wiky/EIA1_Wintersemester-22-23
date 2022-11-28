@@ -26,10 +26,10 @@ var A7;
     let PopProzentFR = ((1 - population2008FR / population2022FR) * 100).toFixed(2);
     let PopProzentIR = ((1 - population2008IR / population2022IR) * 100).toFixed(2);
     //Einwohnerwachstum in Zahlen
-    let WachtstumsrateDE = (population2022DE - population2008DE).toFixed(3);
-    let WachstumsrateFR = (population2022FR - population2008FR).toFixed(3);
-    let WachstumsrateIT = (population2022IT - population2008IT).toFixed(3);
-    let WachstumsrateIR = (population2022IR - population2008IR).toFixed(3);
+    let WachtstumsrateDE = population2022DE - population2008DE;
+    let WachstumsrateFR = population2022FR - population2008FR;
+    let WachstumsrateIT = population2022IT - population2008IT;
+    let WachstumsrateIR = population2022IR - population2008IR;
     let WachstumsrateEU = population2022EU - population2022EU;
     // Einwohner Zahl in %
     console.log(" Die Einwohnerzahl in " + germany + " ist in den Letzten 2 Jahren um " + PopProzentDE + " % gestiegen ");
