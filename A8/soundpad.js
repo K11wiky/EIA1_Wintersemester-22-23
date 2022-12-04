@@ -45,7 +45,7 @@ let pad_9 = new Audio('./assets/DrumPad/snare.mp3');
 let Sound = [("./assets/DrumPad/A.mp3"), ("./assets/DrumPad/C.mp3"), ("./assets/DrumPad/F.mp3"), ("./assets/DrumPad/G.mp3"),
     ("./assets/DrumPad/hithat.mp3"), ("./assets/DrumPad/kick.mp3"), ("./assets/DrumPad/laugh-1.mp3"), ("./assets/DrumPad/laugh-2.mp3"),
     ("./assets/DrumPad/snare.mp3")];
-const beat = [Sound[4], Sound[5], Sound[8]];
+let beat = [Sound[4], Sound[5], Sound[8]];
 let zaehler = 0;
 //Funktionen
 function playSample(soundQuellle) {
