@@ -52,7 +52,7 @@ function playSample(soundQuellle) {
     let sound = new Audio(soundQuellle);
     sound.play();
 }
-function PlayBeat() {
+function playBeat() {
     setInterval(function () {
         playSample(beat[zaehler]);
         zaehler++;

@@ -44,11 +44,11 @@ html, body {
      background: linear-gradient(to bottom,#688fda, #1e60e5); 
   }
   
-  .pad-5, .pad-6, .pad-7, .pad-8 { 
+  .pad-5, .pad-6, .pad-7,  { 
    background-image: linear-gradient(to bottom,#fa3993,#dc0f9b);
   }
   
-  .pad-9, .pad-10, .pad-11, .pad-12 { 
+  .pad-8,.pad-9  { 
     background: linear-gradient(to bottom, #e8ad18, #eb7922);
   }
   

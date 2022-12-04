@@ -78,7 +78,7 @@ let sound: HTMLAudioElement = new Audio (soundQuellle);
 sound.play();
 }
 
-function PlayBeat(): void{
+function playBeat(): void{
     setInterval(function(): void {
         playSample(beat[zaehler]);
         zaehler ++;
@@ -107,4 +107,4 @@ function addClickListenerDrumpad (): void {
 
 }
 
- 
+
