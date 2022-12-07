@@ -13,7 +13,7 @@ namespace DrumMachine {
 
 	let beat: string[] = [Sound[4], Sound[5], Sound[8]];
 
-	let zaehler: number = 0;
+	let zähler: number = 0;
 
 	//Funktionen
 
@@ -24,23 +24,19 @@ namespace DrumMachine {
 		sound.play();
 	}
 
-	function playBeat() {
-		setInterval(function () {
-			playSample(beat[0]);
-		}, 500);
-	}
+	
 
 	// ---- Funktion mit Zaeler und if Condition ---
 
-	// function playBeat() {
-	// 	setInterval(function () {
-	// 		playSample(beat[zähler]);
-	// 		zähler++;
-	// 		if (zähler === 3) {
-	// 			zähler = 0;
-	// 		}
-	// 	}, 500);
-	// }
+	 function playBeat() {
+    	setInterval(function () {
+	 		playSample(beat[zähler]);
+			zähler++;
+			if (zähler === 3) {
+			zähler = 0;
+    		}
+	 	}, 500);
+	 }
 
 	function addClickListenerDrumpad() {
 		document.querySelector(".pad-1").addEventListener("click", function () {
