@@ -1,3 +1,4 @@
+const Projectname = 'Drum machine';
 let pad_1 = new Audio('./assets/DrumPad/A.mp3');
 let pad_2 = new Audio('./assets/DrumPad/C.mp3');
 let pad_3 = new Audio('./assets/DrumPad/F.mp3');
@@ -8,50 +9,11 @@ let pad_7 = new Audio('./assets/DrumPad/laugh-1.mp3');
 let pad_8 = new Audio('./assets/DrumPad/laugh-2.mp3');
 let pad_9 = new Audio('./assets/DrumPad/snare.mp3');
 //Funktionen unten ist alles in einer funktion
-//function playSample (sound){
-// sound.play()
-//}
-//document.querySelector('.pad-1').addEventListener('click', function(){
-//playSample(pad_1);
-//setInterval(function() {
-//playSample 
-//}, 500);
-//})
-//document.querySelector('.pad-2').addEventListener('click', function(){
-//  playSample(pad_2)
-// })
-//document.querySelector('.pad-3').addEventListener('click', function(){
-//playSample(pad_3)
-//})
-//document.querySelector('.pad-4').addEventListener('click', function(){
-//playSample(pad_4)
-//})
-//document.querySelector('.pad-5').addEventListener('click', function(){
-//playSample(pad_5)
-//})
-//document.querySelector('.pad-6').addEventListener('click', function(){
-//playSample(pad_6)
-//})
-//document.querySelector('.pad-7').addEventListener('click', function(){
-//playSample(pad_7)
-//})
-//document.querySelector('.pad-8').addEventListener('click', function(){
-//playSample(pad_8)
-//})
-//document.querySelector('.pad-9').addEventListener('click', function(){
-//playSample(pad_9)
-//})
-// Arrays
-let Sound = [("./assets/DrumPad/A.mp3"), ("./assets/DrumPad/C.mp3"), ("./assets/DrumPad/F.mp3"), ("./assets/DrumPad/G.mp3"),
-    ("./assets/DrumPad/hithat.mp3"), ("./assets/DrumPad/kick.mp3"), ("./assets/DrumPad/laugh-1.mp3"), ("./assets/DrumPad/laugh-2.mp3"),
-    ("./assets/DrumPad/snare.mp3")];
-let beat = [Sound[4], Sound[5], Sound[8]];
-let zaehler = 0;
-//Funktionen
-function playSample(soundQuellle) {
-    let sound = new Audio(soundQuellle);
-    sound.play();
+function playSample(soundquelle) {
+    let sound = new Audio(soundquelle);
 }
+let beat;
+let zaehler = 0;
 function playBeat() {
     setInterval(function () {
         playSample(beat[zaehler]);
@@ -61,15 +23,55 @@ function playBeat() {
         }
     }, 500);
 }
-function addClickListenerDrumpad() {
-    document.querySelector('.pad-1').addEventListener('click', function () { playSample(Sound[0]); });
-    document.querySelector('.pad-2').addEventListener('click', function () { playSample(Sound[1]); });
-    document.querySelector('.pad-3').addEventListener('click', function () { playSample(Sound[2]); });
-    document.querySelector('.pad-4').addEventListener('click', function () { playSample(Sound[3]); });
-    document.querySelector('.pad-5').addEventListener('click', function () { playSample(Sound[4]); });
-    document.querySelector('.pad-6').addEventListener('click', function () { playSample(Sound[5]); });
-    document.querySelector('.pad-7').addEventListener('click', function () { playSample(Sound[6]); });
-    document.querySelector('.pad-8').addEventListener('click', function () { playSample(Sound[7]); });
-    document.querySelector('.pad-9').addEventListener('click', function () { playSample(Sound[8]); });
+const sound = [
+    {
+        key: 'A',
+        sounds: './assets/DrumPad/A.mp3'
+    },
+    {
+        key: 'C',
+        sounds: './assets/DrumPad/C.mp3'
+    },
+    {
+        key: 'F',
+        sounds: './assets/DrumPad/F.mp3'
+    },
+    {
+        key: 'G',
+        sounds: './assets/DrumPad/G.mp3'
+    },
+    {
+        key: 'H',
+        sounds: './assets/DrumPad/hithat.mp3'
+    },
+    {
+        key: 'K',
+        sounds: './assets/DrumPad/kick.mp3'
+    },
+    {
+        key: 'L',
+        sounds: './assets/DrumPad/laugh-1.mp3'
+    },
+    {
+        key: 'U',
+        sounds: './assets/DrumPad/laugh-2.mp3'
+    },
+    {
+        key: 'S',
+        sounds: './assets/DrumPad/snare.mp3'
+    },
+];
+const keys = ['A', 'C', 'G', 'F', 'H', 'K', 'L', 'U', 'S'];
+const sounds = ['./assets/DrumPad/A.mp3',
+    './assets/DrumPad/C.mp3', './assets/DrumPad/F.mp3', './assets/DrumPad/G.mp3', './assets/DrumPad/hithat.mp3', './assets/DrumPad/kick.mp3',
+    './assets/DrumPad.lauthe-1.mp3', './assets/Drumpad/laughe-2.mp3', './assets/DrumPad/snare.mp3'];
+//document.addEventListener('keydown', (e) =>{
+//const id = e.key.toUpperCase();
+//const Audio= document.getElementById('id')
+//if(Audio)
+//Audio.play();
+//})
+window.addEventListener('load', addClickListenerDrumPad);
+function addClickListenerDrumPad() {
 }
 //# sourceMappingURL=soundpad.js.map
