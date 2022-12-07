@@ -23,10 +23,6 @@ function playSample(soundQuellle) {
 function playBeat() {
     setInterval(function () {
         playSample(beat[zaehler]);
-        zaehler++;
-        if (zaehler === 3) {
-            zaehler = 0;
-        }
     }, 500);
 }
 function addClickListenerDrumpad() {
