@@ -16,7 +16,7 @@ var DrumMachine;
     //Funktionen
     window.addEventListener("load", addClickListenerDrumpad);
     function playSample(soundQuellle) {
-        let sound = new Audio(soundQuellle);
+        let sound = new Audio(soundQuellle); //---Why this?--
         sound.play();
     }
     //function playBeat() {

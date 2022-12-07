@@ -20,7 +20,7 @@ namespace DrumMachine {
 	window.addEventListener("load", addClickListenerDrumpad);
 
 	function playSample(soundQuellle: string) {
-		let sound: HTMLAudioElement = new Audio(soundQuellle);
+		let sound: HTMLAudioElement = new Audio(soundQuellle);//---Why this?--
 		sound.play();
 	}
 
