@@ -24,7 +24,11 @@ namespace DrumMachine {
 		sound.play();
 	}
 
-	
+	//function playBeat() {
+      //setInterval(function () {
+        // playSample(beat[0]);
+//},500);
+//}
 
 	// ---- Funktion mit Zaeler und if Condition ---
 
