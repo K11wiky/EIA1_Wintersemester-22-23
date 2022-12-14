@@ -71,3 +71,6 @@ html, body {
   .Play:active{
     transform: scale(0.9);
   }
+  .hidden {
+    display: none !important;
+  }

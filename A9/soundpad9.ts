@@ -1,4 +1,4 @@
-namespace DrumMachine {
+namespace DrumMachine9 {
 	let Sound: string[] = [
 		"./assets/DrumPad/hihat.mp3",
 		"./assets/DrumPad/kick.mp3",
@@ -20,28 +20,45 @@ namespace DrumMachine {
 	window.addEventListener("load", addClickListenerDrumpad);
 
 	function playSample(soundQuellle: string) {
-		let sound: HTMLAudioElement = new Audio(soundQuellle);//---Why this?--
+		let sound: HTMLAudioElement = new Audio(soundQuellle);
 		sound.play();
 	}
+//-- play and stop buttom
 
-	//function playBeat() {
-      //setInterval(function () {
-        // playSample(beat[0]);
-//},500);
-//}
+let play =document.querySelector('#play')
+let stop =document.querySelector('#stop')
+
+document.querySelector('#play').addEventListener('click', function(){
+	play.classList.add('hidden');
+	stop.classList.add('hidden')
+	setInterval(()=>{
+		playSample(beat[zähler]);
+		if (zähler===2){
+			zähler=0
+		}else{zähler++}
+	}, 500)
+
+})
+
+document.querySelector('#stop').addEventListener('click', function() {
+	stop.classList.add('hidden');
+	play.classList.add('hidden');
+	clearInterval
+})
+
+///-- Generator für mikro--
+
+document.querySelector('#mix').addEventListener('click', function(){
+	Sound[0]
+	while(Sound[0].length < 3){
+		var r =Math.floor(Math.random() * 10);
+		Sound.push(Sound[r])
+	}
+})
 
 	// ---- Funktion mit Zaeler und if Condition ---
 
-	 function playBeat() {
-    	setInterval(function () {
-	 		playSample(beat[zähler]);
-			zähler++;
-			if (zähler === 3) {
-			zähler = 0;
-    		}
-	 	}, 500);
-	 }
-
+	 
 	function addClickListenerDrumpad() {
 		document.querySelector(".pad-1").addEventListener("click", function () {
 			playSample(Sound[0]);
@@ -70,80 +87,6 @@ namespace DrumMachine {
 		document.querySelector(".pad-9").addEventListener("click", function () {
 			playSample(Sound[8]);
 		});
-		document.querySelector(".Play").addEventListener("click", function () {
-			playBeat();
-		});
+		
 	}
 }
-
-// let pad_1: HTMLAudioElement = new Audio("./assets/DrumPad/hihat.mp3");
-// let pad_2: HTMLAudioElement = new Audio("./assets/DrumPad/kick.mp3");
-// let pad_3: HTMLAudioElement = new Audio("./assets/DrumPad/snare.mp3");
-// let pad_4: HTMLAudioElement = new Audio("./assets/DrumPad/A.mp3");
-// let pad_5: HTMLAudioElement = new Audio("./assets/DrumPad/C.mp3");
-// let pad_6: HTMLAudioElement = new Audio("./assets/DrumPad/F.mp3");
-// let pad_7: HTMLAudioElement = new Audio("./assets/DrumPad/G.mp3");
-// let pad_8: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-1.mp3");
-// let pad_9: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-2.mp3");
-
-// keyboard
-const sound = [
-	{
-		key: "A",
-		sounds: "./assets/DrumPad/A.mp3",
-	},
-
-	{
-		key: "C",
-		sounds: "./assets/DrumPad/C.mp3",
-	},
-	{
-		key: "F",
-		sounds: "./assets/DrumPad/F.mp3",
-	},
-
-	{
-		key: "G",
-		sounds: "./assets/DrumPad/G.mp3",
-	},
-	{
-		key: "H",
-		sounds: "./assets/DrumPad/hithat.mp3",
-	},
-	{
-		key: "K",
-		sounds: "./assets/DrumPad/kick.mp3",
-	},
-	{
-		key: "L",
-		sounds: "./assets/DrumPad/laugh-1.mp3",
-	},
-	{
-		key: "U",
-		sounds: "./assets/DrumPad/laugh-2.mp3",
-	},
-	{
-		key: "S",
-		sounds: "./assets/DrumPad/snare.mp3",
-	},
-];
-const keys = ["A", "C", "G", "F", "H", "K", "L", "U", "S"];
-
-const sounds = [
-	"./assets/DrumPad/A.mp3",
-	"./assets/DrumPad/C.mp3",
-	"./assets/DrumPad/F.mp3",
-	"./assets/DrumPad/G.mp3",
-	"./assets/DrumPad/hithat.mp3",
-	"./assets/DrumPad/kick.mp3",
-	"./assets/DrumPad.lauthe-1.mp3",
-	"./assets/Drumpad/laughe-2.mp3",
-	"./assets/DrumPad/snare.mp3",
-];
-
-//document.addEventListener('keydown', (e) =>{
-//const id = e.key.toUpperCase();
-//const Audio= document.getElementById('id')
-//if(Audio)
-//Audio.play();
-//})

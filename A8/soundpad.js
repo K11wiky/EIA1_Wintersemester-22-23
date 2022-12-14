@@ -76,7 +76,7 @@ var DrumMachine;
 // let pad_7: HTMLAudioElement = new Audio("./assets/DrumPad/G.mp3");
 // let pad_8: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-1.mp3");
 // let pad_9: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-2.mp3");
-// keyboard
+// keyboard work in progresss
 const sound = [
     {
         key: "A",
