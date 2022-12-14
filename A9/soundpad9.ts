@@ -86,7 +86,7 @@ namespace DrumMachine {
 // let pad_8: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-1.mp3");
 // let pad_9: HTMLAudioElement = new Audio("./assets/DrumPad/laugh-2.mp3");
 
-// keyboard work in progresss
+// keyboard
 const sound = [
 	{
 		key: "A",
