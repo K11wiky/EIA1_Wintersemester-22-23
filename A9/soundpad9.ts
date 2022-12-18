@@ -46,7 +46,7 @@ document.querySelector('#stop').addEventListener('click', function() {
 	clearInterval
 })
 
-///-- Generator für mikro--
+///-- Generator for mikro--
 
 document.querySelector('#mix').addEventListener('click', function(){
 	beat 

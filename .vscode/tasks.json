@@ -10,6 +10,15 @@
 			],
 			"group": "build",
 			"label": "tsc: Überwachen – A8/tsconfig.json"
+		},
+		{
+			"type": "npm",
+			"script": "compile",
+			"path": "A10",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: compile - A10",
+			"detail": "tsc"
 		}
 	]
 }

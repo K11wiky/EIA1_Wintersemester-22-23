@@ -40,12 +40,12 @@ var DrumMachine9;
         play.classList.add('hidden');
         clearInterval;
     });
-    ///-- Generator für mikro--
+    ///-- Generator for mikro--
     document.querySelector('#mix').addEventListener('click', function () {
-        Sound[0];
-        while (Sound[0].length < 3) {
+        beat;
+        while (Sound[4].length < 3) { // i need help, i think i understood this but not completely ಥ_ಥ
             var r = Math.floor(Math.random() * 10);
-            Sound.push(Sound[r]);
+            beat.push(Sound[r]);
         }
     });
     // ---- Funktion mit Zaeler und if Condition ---

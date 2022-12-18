@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: Orbitron;
+    background: black;
+    background-size: cover;
+    margin: auto;
+    max-width: 600px
+
+
+
+  }
