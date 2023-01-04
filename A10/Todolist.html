@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="style10.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
-    <script src="./todolist.js"></script>
+    <script src="./todolist.js" defer></script>
     <title>Todolist</title> 
 </head>
 <body>
-    <div class=" header">
-        <h1 class="header_1"> YOUR TO DO LIST</h1> <!-- To do the lsit, and listen to it, I failed my todo list a lot (￣y▽,￣)╭ -->
+    <div class="todo-list">
+        <h1 class="header"> YOUR TO DO LIST</h1> <!-- To do the lsit, and listen to it, I failed my todo list a lot (￣y▽,￣)╭ -->
         <form id="new-task">
             <input id="new-task-input" type="text" placeholder="Add a new Task">
-            <input id="new-task-submit" type="text" value="Add Task" />
+            <button id="new-task-submit" type="text" value="Add Task" >
         </form>
     </div>
+    <main>
+        <section class="task-list">
+            <div class="taskAlign">
+                <h2 id="header_2"></h2>
+                <h2 id="number"> 0 </h2>
+            </div>
+    
+            <div id="task"></div>
+        </section>
+    </main>
     
 </body>
-<main>
-    <section class="task-list">
-        <div class="taskAlign">
-            <h2 id="header_2"></h2>
-            <h2 id="number"> 0 </h2>
-        </div>
 
-        <div id="task"></div>
-    </section>
-</main>
 </html>

@@ -29,9 +29,6 @@ html, body {
       border-radius: 5%;
       border-style: double;
       transition: all .3s;
-    
-   
-    
   }
   
   .active {
@@ -55,26 +52,41 @@ html, body {
   .box:hover{
     transform: scale(1.04);
   }
+
   .box:active{
     transform: scale(0.9);
   }
-  .Play{
-    width:150px;
-    height: 150px;
-    transition: all .3s;
+
+  
+   i {
+    font-size: 80px;
+    color:#ffffff;
+    margin: 10px;
   }
 
-  .Play:hover{
-    transform: scale(1.04);
+  #play, i, #mix {
+    transition:all 500ms; 
   }
 
-  .Play:active{
-    transform: scale(0.9);
+  #play:hover, i:hover, #mix:hover {
+    transform: scale(1.10);
   }
-  .hidden {
-    display: none !important;
+
+  #play:active, i:active, #mix:active {
+    transform: scale(0.8);
   }
-  i{
+
+  
+  /* i{
     color:aliceblue
-  }
+  } */
   /* My brain is currently mash to understand the concept here, why does the color not change ?? Am ....I ...✨stupid✨ヽ(*。>Д<)o゜〒▽〒
+
+  
+  /* B E M E R K U N G
+
+  - Die gewählte Farbe 'aliceblue', die vorrher ausgewählt war, macht keinen offensichtlichen Unterschied zu purem 'Weiß', da es ein sehr heller Farbton ist. Sieht dann so aus, als ob es immer noch weiß wäre. Wenn du die Farbe bspw. in rot, blau oder gelb änderst, solltest du den Unterschied sofort sehen können. 
+  
+
+  */
+
