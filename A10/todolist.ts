@@ -40,7 +40,13 @@ if (list_el){
     task_el.appendChild(task_content_element);
     
     const task_input_el : HTMLInputElement = document.createElement('input');
-    task_
+    task_input_el.classList.add('text');
+    task_input_el.type =('text');
+    task_input_el.value =task;
+    task_input_el.setAttribute('readonly','readonly')
+    task_content_element.appendChild(task_input_el)
+//delete
+    task_actions_el : HTMLDivElement = document.createElement ('div') //hier liegt ein problem vor ich weis aber nicht was 
 
 }    })}
 })
