@@ -4,7 +4,7 @@ html {
   
   body{
     font-family: Orbitron;
-    background: rgb(78, 76, 76);
+    background: rgb(182, 228, 184);
     background-size: cover;
     margin: auto;
     max-width: 600px;
@@ -18,4 +18,85 @@ html {
 position: absolute;
 padding: 0px;
 margin: 0px;
+  }
+  .header {
+
+    font-size: 40px;
+    margin-left: 20px;
+  
+  }
+  #header_2 {
+    font-size: 23px;
+    margin-left: 43%;
+    margin-right: 45%;
+  
+
+  }
+  #CheckAndTaskDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  input{
+    background-color: aliceblue;
+    border: 4px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 12%;
+    display: inline;
+  }
+
+  main{
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  .task-list{
+    padding : 12%;
+  }
+  #task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 21px;
+    width: 100%;
+    padding: 13px;
+  }
+  .taskAlign {
+    display: flex;
+    flex-direction: row;
+  }
+  #task .task {
+    color:black;
+    font-size: 15px;
+    transform: 0.3s;
+  }
+  #task .content .text{
+    color:black;
+    font-size: 15;
+    transition: 0.3;
+    
+  }
+  #task .task .content .text:not(:read-only){
+    color: coral;
+  }
+  .delete{
+    background-color: beige;
+    color: rgb(103, 162, 216);
+  }
+  .task{
+    background-color:aliceblue;
+    border-radius: 18px;
+    padding: 17px;
+  }
+  [type='checkbox']{
+    margin-right: 25px;
+    position: relative;
+    top: 6px;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
   }
