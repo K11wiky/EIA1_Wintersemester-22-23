@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: Orbitron;
+    background: rgb(78, 76, 76);
+    background-size: cover;
+    margin: auto;
+    max-width: 600px;
+    color: white;
+
+
+
+  }
+
+.todo-list {
+position: absolute;
+padding: 0px;
+margin: 0px;
+  }

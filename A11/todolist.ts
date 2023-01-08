@@ -40,30 +40,6 @@ if (list_el){
     task_el.appendChild(task_content_element);
     
     const task_input_el : HTMLInputElement = document.createElement('input');
-    task_input_el.classList.add('text');
-    task_input_el.type =('text');
-    task_input_el.value =task;
-    task_input_el.setAttribute('readonly','readonly')
-    task_content_element.appendChild(task_input_el)
-//delete
-    const task_activity_el : HTMLDivElement = document.createElement ('div') 
-    task_activity_el.classList.add('activity');
-
-    const task_delete_el : HTMLButtonElement =document.createElement ('button')
-    task_delete_el.classList.add('delete');
-    task_delete_el.innerHTML = 'Delete';
-
-    task_activity_el.appendChild(task_delete_el);
-    task_el.appendChild(task_activity_el);
-    CheckAndTaskDiv.appendChild(task_el);
-    input.value = '';
-
-    task_delete_el.addEventListener('click', function(){
-        list_el.removeChild(CheckAndTaskDiv);
-    })
-    counter --;
-    number.innerHTML  = '' + counter;
-
 
 }    })}
 })
