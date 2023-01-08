@@ -1,14 +1,14 @@
 namespace DrumMachine9 {
 	let sound: string[] = [
-		"mp3/hihat.mp3",
-		"mp3/kick.mp3",
-		"mp3/snare.mp3",
-		"mp3/F.mp3",
-		"mp3/G.mp3",
-		"mp3/A.mp3",
-		"mp3/C.mp3",
-		"mp3/laugh-1.mp3",
-		"mp3/laugh-2.mp3",
+		"./assets/DrumPad/hihat.mp3",
+		"./assets/DrumPad/kick.mp3",
+		"./assets/DrumPad/snare.mp3",
+		"./assets/DrumPad/F.mp3",
+		"./assets/DrumPad/G.mp3",
+		"./assets/DrumPad/A.mp3",
+		"./assets/DrumPad/C.mp3",
+		"./assets/DrumPad/laugh-1.mp3",
+		"./assets/DrumPad/laugh-2.mp3",
 	];
 
 	let beat: string[] = [sound[0]];
