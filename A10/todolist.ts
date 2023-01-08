@@ -40,6 +40,7 @@ if (list_el){
     task_el.appendChild(task_content_element);
     
     const task_input_el : HTMLInputElement = document.createElement('input');
+    task_
 
 }    })}
 })
